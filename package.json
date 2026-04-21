@@ -1,0 +1,32 @@
+{
+  "name": "grimoire-design-system",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "./dist/grimoire-design-system.umd.cjs",
+  "module": "./dist/grimoire-design-system.js",
+  "exports": {
+    ".": {
+      "import": "./dist/grimoire-design-system.js",
+      "require": "./dist/grimoire-design-system.umd.cjs"
+    },
+    "./style.css": "./dist/style.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.0.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "vite": "^8.0.0"
+  }
+}
