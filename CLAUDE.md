@@ -59,6 +59,19 @@ src/
 - Stories usam CSF3 com `tags: ['autodocs']` para documentação automática
 - Estilos sempre via CSS Modules + tokens CSS; nunca valores hardcoded
 
+## Versionamento
+
+Publicado via GitHub (não no npm registry). Usa git tags + semver.
+
+```bash
+npm version patch   # correção de bug  → 0.1.0 → 0.1.1
+npm version minor   # novo componente  → 0.1.0 → 0.2.0
+npm version major   # breaking change  → 0.1.0 → 1.0.0
+git push && git push --tags
+```
+
+Após o push, criar um Release no GitHub apontando para a tag com o changelog.
+
 ## Scripts
 
 ```bash
